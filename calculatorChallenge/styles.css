@@ -1,0 +1,10 @@
+.btn{
+    background-color: lightgray;
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.display{
+    font-family: 'Roboto', sans-serif;
+}
