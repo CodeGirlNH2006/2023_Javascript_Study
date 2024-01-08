@@ -1,6 +1,8 @@
 // Gain Access to form elements
 const submitButton = document.getElementById('submit');
-
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const phone = document.getElementById("phone");
 // Add event listener to submit button
 submitButton.addEventListener('click', checkForm);
 
@@ -15,17 +17,25 @@ function checkForm(){
         2. If statement to check if the input is blank
         3. If the input is blank, turn the fields red
      */
-    const name = document.getElementById("name");
+
     if(name.value === ""){
         name.style.backgroundColor = "red";
     }
-    const email = document.getElementById("email");
+    else{
+        name.style.backgroundColor = "white";
+    }
+
     if(email.value === ""){
         email.style.backgroundColor = "red";
     }
-    const phone = document.getElementById("phone");
+    else{
+        email.style.backgroundColor = "white";
+    }
     if(phone.value === ""){
         phone.style.backgroundColor = "red";
+    }
+    else{
+        phone.style.backgroundColor = "white";
     }
 
 }
