@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <p id="output">Your answer will go here!</p>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+      /* Goal: Output 100 stars
+         1. Make a constant for output
+         2. Make a loop to build a string (concatenation)
+         3. Output the string to the page
+      */
+        const output = document.getElementById("output");
+        // Javascript for loops
+        // for every tenth star, add a line break
+        let stars = "";
+        for (let i = 1; i <= 100; i++) {
+          stars += "*";
+            if (i % 10 === 0) {
+              stars += "<br>";
+            }
+        }
+        output.innerHTML = stars;
+</script>
+
+</body>
+</html>
